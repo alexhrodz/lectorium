@@ -1,0 +1,23 @@
+tr,
+td,
+th,
+table {
+    border: 1px solid;
+}
+
+table {
+    margin: 40px;
+}
+.second-table,
+.fourth-table{
+    border-collapse: collapse;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.first-table td {
+    width: 30px;
+    height: 30px;
+}
