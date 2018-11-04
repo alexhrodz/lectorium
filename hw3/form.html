@@ -3,8 +3,60 @@
 <head>
     <meta charset="utf-8">
     <title>form</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-
+  <form>
+    <fieldset>
+      <legend>Про себе</legend>
+      <p><label>Ім&rsquo;я* (Обов&rsquo;язкове поле):<input type="text" name="name" placeholder="Введіть своє ім&rsquo;я"></label></p>
+      <p><label>Прізвище* (Обов&rsquo;язкове поле):<input type="text" name="secondname" placeholder="Введіть своє прізвище"></label></p>
+      <p><label>Стать* (Обов&rsquo;язкове поле):
+      <select name="sex">
+        <option disabled selected>-Виберіть стать-</option>
+        <option value="male">Козак</option>
+        <option value="female">Жіноча</option>
+      </select></label></p>
+      <p><label>Вік (Лише цифри від 18 до 48)* (Обов&rsquo;язкове поле):<input type="number" name="old" min="18" max="48"></label></p>
+    </fieldset>
+    <fieldset>
+      <legend>Фото</legend>
+      <input type="file" name="foto" accept="image/*">
+    </fieldset>
+    <fieldset>
+      <legend>День народження</legend>
+      День народження:<input type="date" name="calendar">
+    </fieldset>
+    <fieldset>
+      <legend>Інша інформація</legend>
+      <p><label>Ваш email (Лише email адрес):<br><input type="email" name="email" placeholder="Email" required></label></p>
+      <p><label>Ваш телефон (Має складатись від 6-ти до 9-ти символів і має містити лише цифри):<br><input type="tel" placeholder="Телефон" name="tel" required></label></p>
+      <p><label>Пароль (Пароль прихований):<br><input type="password" name="password" placeholder="Пароль" required></label></p>
+      <p><label>Ваш веб-сайт (Лише URL адреса):<br><input type="url" name="url" placeholder="Url" required></label></p>
+    </fieldset>
+    <fieldset>
+      <legend>Ваші улюблені заняття</legend>
+        <p><label><input type="radio" name="favorite-activities" value="layout">Вьорстка</label></p>
+        <p><label><input type="radio" name="favorite-activities" value="computer-games">Комп&rsquo;ютерні ігри</label></p>
+        <p><label><input type="radio" name="favorite-activities" value="layout-email">Вьорстка емейлів</label></p>
+        <p><label><input type="radio" name="favorite-activities" value="fixed-site-ios">Фіксить баги на сайті під iOS</label></p>
+        <p><label><input type="radio" name="favorite-activities" value="fixed-flex-ie">Фіксить флєкса під IE</label></p>
+    </fieldset>
+    <fieldset>
+      <legend>Що нам не подобається в вьорсткі форм?</legend>
+        <p><label><input type="checkbox" name="favorite-activities" value="layout">Вьорстка форм</label></p>
+        <p><label><input type="checkbox" name="favorite-activities" value="computer-games">Як зверстать Drag &amp; Drop</label></p>
+        <p><label><input type="checkbox" name="favorite-activities" value="layout-email">Імейли верстать круче</label></p>
+        <p><label><input type="checkbox" name="favorite-activities" value="fixed-site-ios">Як застілить випадающий список?</label></p>
+        <p><label><input type="checkbox" name="favorite-activities" value="fixed-flex-ie">Що таке форма</label></p>
+    </fieldset>
+    <fieldset>
+      <legend>Інше</legend>
+      <p>Ваш коментар:</p>
+      <textarea name="comment" cols="50" rows="5"></textarea>
+    </fieldset>
+    <input type="reset" value="Зтерти данні">
+    <input type="submit" value="Відправити форму">
+  </form>
 </body>
 </html>
