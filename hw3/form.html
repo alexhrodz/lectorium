@@ -30,9 +30,9 @@
     <fieldset>
       <legend>Інша інформація</legend>
       <p><label>Ваш email (Лише email адрес):<br><input type="email" name="email" placeholder="Email" required></label></p>
-      <p><label>Ваш телефон (Має складатись від 6-ти до 9-ти символів і має містити лише цифри):<br><input type="tel" placeholder="Телефон" name="tel" required></label></p>
-      <p><label>Пароль (Пароль прихований):<br><input type="password" name="password" placeholder="Пароль" required></label></p>
-      <p><label>Ваш веб-сайт (Лише URL адреса):<br><input type="url" name="url" placeholder="Url" required></label></p>
+      <p><label><br>Ваш телефон (Має складатись від 6-ти до 9-ти символів і має містити лише цифри):<br><input type="tel" placeholder="Телефон" name="tel" required></label></p>
+      <p><label><br>Пароль (Пароль прихований):<br><input type="password" name="password" placeholder="Пароль" required></label></p>
+      <p><label><br>Ваш веб-сайт (Лише URL адреса):<br><input type="url" name="url" placeholder="Url" required></label></p>
     </fieldset>
     <fieldset>
       <legend>Ваші улюблені заняття</legend>
@@ -54,6 +54,17 @@
       <legend>Інше</legend>
       <p>Ваш коментар:</p>
       <textarea name="comment" cols="50" rows="5"></textarea>
+      <p>Виберіть декілька варіантів:</p>
+      <select name="other" size="5" multiple>
+        <option value="value1">Варіант-1</option>
+        <option value="value2">Варіант-2</option>
+        <option value="value3">Варіант-3</option>
+        <option value="value4">Варіант-4</option>
+        <option value="value5">Варіант-5</option>
+        <option value="value6">Варіант-6</option>
+        <option value="value7">Варіант-7</option>
+        <option value="value8">Варіант-8</option>
+      </select>
     </fieldset>
     <input type="reset" value="Зтерти данні">
     <input type="submit" value="Відправити форму">
