@@ -1,0 +1,27 @@
+body {
+     margin: 0;
+     padding: 0;
+     width: 100vw;
+     display: table;
+     background-color: deeppink;
+ }
+
+div {
+    display: table-cell;
+    height: 100vh;
+}
+
+.first {
+    width: 100px;
+    background-color: lightgray;
+}
+
+.second {
+    width: calc(50vw - 50px);
+    background-color: cornflowerblue;
+}
+
+.third {
+    background-color: gold;
+}
+

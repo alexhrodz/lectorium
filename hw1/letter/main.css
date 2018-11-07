@@ -1,0 +1,46 @@
+h1, h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 span {
+    text-transform: uppercase;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.dash:before {
+    content: "-";
+    position: relative;
+    left: -5px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.second-level li:first-child:before {
+    content: "a. Текст -";
+}
+
+.second-level li:nth-child(2):before {
+    content: "б. Відео -";
+}
+
+.second-level li:nth-child(3), .second-level li:nth-child(4) {
+    padding-left: 57px;
+}
+
+.second-level li:nth-child(3):before, .second-level li:nth-child(4):before {
+    left: 0;
+}

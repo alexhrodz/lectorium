@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0b0307;
+}
+
+.flex-container {
+    display: flex;
+    height: 100vh;
+}
+
+.flex-element {
+    flex-grow: 1;
+    background-color: blue;
+}
+
+.flex-element:first-child {
+    flex-grow: 0;
+    width: 100px;
+    background-color: bisque;
+}
+
+.flex-element:last-child {
+    background-color: gold;
+}
+
