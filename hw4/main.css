@@ -16,7 +16,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, button {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -48,3 +48,125 @@ table {
 	border-spacing: 0;
 }
 /*end Reset CSS*/
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+.group::before,
+.group::after {
+  content: "";
+  display: table;
+}
+.group::after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+  ========================================
+  header
+  ========================================
+*/
+#header {
+	background: url(img/bg.png) no-repeat top center;
+	width: 100%;
+	height: 800px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+}
+
+#header nav {
+	width: 1170px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+#header .logo {
+	color: #fff;
+	float: left;
+	font-family: Montserrat;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 36px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 1.92px;
+	margin-top: 15px;
+}
+
+#header .logo:hover,
+#header .logo:active {
+	color: #ff4081;
+}
+
+#header nav ul {
+	float: right;
+}
+
+#header nav ul li {
+	display: inline-block;
+	margin-left: 13px;
+}
+
+#header nav ul a {
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 700;
+	padding: 30px 0;
+}
+
+#header nav ul a:hover,
+#header nav ul a:active {
+	border-bottom: 4px solid #ff4081;
+}
+
+#header nav ul li span{
+	margin-left: 13px;
+	margin-right: 10px;
+}
+
+#header p {
+	opacity: 0.7;
+	font-family: Montserrat;
+	font-size: 28px;
+	font-weight: 400;
+	line-height: 27px;
+	letter-spacing: 1.4px;
+	margin-top: 187px;
+}
+
+#header h1 {
+	width: 810px;
+	font-family: "Montserrat - Black";
+	font-size: 42px;
+	font-weight: 700;
+	letter-spacing: 2.1px;
+	margin: 50px auto 98px;
+}
+
+#header .header-btn {
+	display: block;
+	width: 170px;
+	height: 45px;
+	margin: 0 auto;
+	box-shadow: 0 17px 24px rgba(48, 63, 159, 0.2);
+	border-radius: 22px;
+	background-color: #303f9f;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+/*
+  ========================================
+  end header
+  ========================================
+*/
