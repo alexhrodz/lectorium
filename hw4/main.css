@@ -64,7 +64,7 @@ table {
 
 /*
   ========================================
-  header
+  start header
   ========================================
 */
 #header {
@@ -115,7 +115,8 @@ table {
 	color: #fff;
 	font-size: 13px;
 	font-weight: 600;
-	padding: 28px 0;
+	padding: 29px 0;
+	letter-spacing: -0.1px;
 }
 
 #header nav ul a:hover,
@@ -163,12 +164,201 @@ table {
 	text-decoration: none;
 }
 
+#header button:hover,
+#header button:active {
+	color: #FF0;
+	background-color: #1E90FF;
+}
 /*
   ========================================
   end header
   ========================================
 */
 
+/*
+  ========================================
+  start content
+  ========================================
+*/
+#content {
+	width: 1170px;
+	margin: 90px auto 0;
+	/*height: 1408px;*/
+}
+
+main,
+aside,
+article,
+.open-post li  {
+	display: inline-block;
+}
+
+main {
+	width: 820px;
+	margin-right: 15px;
+}
+
+
+aside {
+	width: 330px;
+	background-color: grey;
+}
+
+article {
+	width: 260px;
+	margin-top: 87px;
+}
+
+.post {
+	border: 1px solid #dedede;
+	border-radius: 4px;
+}
+
+.open-post {
+	background: url(img/Layer_48.png) no-repeat top center;
+	height: 420px;
+}
+
+.all-post-1 {
+	background: url(img/Layer_53.png) no-repeat top center;
+	height: 160px;
+}
+
+.all-post-2 {
+	background: url(img/Layer_54.png) no-repeat top center;
+	height: 160px;
+}
+
+.all-post-3 {
+	background: url(img/Layer_55.png) no-repeat top center;
+	height: 160px;
+}
+
+.open-post ul {
+	display: block;
+}
+
+.post h3 {
+	font-weight: 800;
+	font-size: 18px;
+	letter-spacing: -0.32px;
+	margin: 17px 0 9px 15px;
+}
+
+.all-post h4 {
+	font-weight: 600;
+	font-size: 15px;
+	letter-spacing: -0.82px;
+	margin: 11px 18px 0;
+	line-height: 23px;
+}
+
+.post p {
+	font-weight: 400;
+	font-size: 17px;
+	letter-spacing: -0.5px;
+	margin: 0 17px;
+	line-height: 25px;
+}
+
+.all-post p {
+	font-weight: 400;
+	font-size: 15px;
+	letter-spacing: -0.7px;
+	margin: 8px 17px;
+	line-height: 21px;
+}
+
+.autor {
+	margin-top: 14px;
+	margin-bottom: 20px;
+	border-top: 1px solid #dedede;
+	padding-top: 21px;
+}
+
+.all-post .autor {
+	margin-top: 24px;
+	margin-bottom: 20px;
+	border-top: 1px solid #dedede;
+	padding-top: 16px;
+}
+
+.autor div {
+	display: inline-block;
+	width: 90%;
+  margin-left: 20px;
+}
+
+.autor img {
+	float: left;
+	margin-left: -1px;
+}
+
+.autor a {
+	float: right;
+	width: 3%;
+	margin-top: 15px;
+  margin-right: -2px;
+}
+
+.all-post .autor a {
+	float: right;
+	width: 3%;
+	margin-top: -24px;
+	margin-right: 14px;
+}
+
+.autor p {
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: 0.15px;
+	margin: 2px 0 0px 59px;
+}
+
+.all-post .autor p {
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: 0.5px;
+	margin: 4px 0 0px 58px;
+}
+
+.autor span {
+	font-size: 11px;
+  margin-left: 10px;
+	letter-spacing: 0.55px;
+}
+
+.all-post .autor span {
+	font-size: 11px;
+  margin-left: 10px;
+	letter-spacing: 0.75px;
+}
+
+.golova-ne-varit {
+	margin-right: 15px;
+}
+
+.post h4 {
+	font-weight: 600;
+	font-size: 15px;
+	letter-spacing: -0.82px;
+	margin: 11px 18px 0;
+	line-height: 23px;
+}
+
+/*
+  ========================================
+  start footer
+  ========================================
+*/
+
+
+
+/*
+  ========================================
+  start footer
+  ========================================
+*/
 #footer {
 	background-color: #303030;
 }
@@ -198,6 +388,9 @@ table {
 #footer section p {
 	display: inline-block;
 	margin-top: 80px;
+	font-size: 40px;
+	letter-spacing: 1.6px;
+	font-weight: 700;
 }
 
 #footer section form {
@@ -210,8 +403,9 @@ table {
 } 
 
 #footer nav {
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-top: 32px;
+	margin-left: -1px;
+	margin-bottom: 34px;
 }
 
 #footer div ul a {
@@ -219,8 +413,9 @@ table {
 	color: #fff;
 	font-weight: 600;
 	text-decoration: none;
-	margin-right: 38px;
-	font-size: 13px;
+	margin-right: 36px;
+	font-size: 11px;
+	letter-spacing: 0.06px;
 }
 
 #footer div form {
@@ -228,7 +423,7 @@ table {
 }
 /*
   ========================================
-  footer
+  end footer
   ========================================
 */
 
