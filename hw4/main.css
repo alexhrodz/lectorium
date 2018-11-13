@@ -15,7 +15,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, button {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -52,9 +52,11 @@ table {
   content: "";
   display: table;
 }
+
 .group::after {
   clear: both;
 }
+
 .group {
   clear: both;
   *zoom: 1;
@@ -84,13 +86,12 @@ table {
 	color: #fff;
 	float: left;
 	font-family: Montserrat;
-	font-size: 24px;
+	font-size: 22px;
 	font-weight: 700;
-	line-height: 36px;
 	text-transform: uppercase;
 	text-decoration: none;
-	letter-spacing: 1.92px;
-	margin-top: 15px;
+	letter-spacing: 0.92px;
+	margin-top: 21px;
 }
 
 #header .logo:hover,
@@ -105,20 +106,22 @@ table {
 
 #header nav ul li {
 	display: inline-block;
-	margin-left: 13px;
+	margin-left: 11px;
 }
 
 #header nav ul a {
 	display: inline-block;
 	text-decoration: none;
 	color: #fff;
-	font-weight: 700;
-	padding: 30px 0;
+	font-size: 13px;
+	font-weight: 600;
+	padding: 28px 0;
 }
 
 #header nav ul a:hover,
 #header nav ul a:active {
-	border-bottom: 4px solid #ff4081;
+	margin-bottom: -1px;
+	border-bottom: 3px solid #ff4081;
 }
 
 #header nav ul li span{
@@ -129,33 +132,34 @@ table {
 #header p {
 	opacity: 0.7;
 	font-family: Montserrat;
-	font-size: 28px;
-	font-weight: 400;
-	line-height: 27px;
+	font-size: 18px;
+	font-weight: 500;
 	letter-spacing: 1.4px;
-	margin-top: 187px;
+	margin-top: 186px;
 }
 
 #header h1 {
 	width: 810px;
 	font-family: "Montserrat - Black";
 	font-size: 42px;
-	font-weight: 700;
-	letter-spacing: 2.1px;
-	margin: 50px auto 98px;
+	font-weight: 800;
+	letter-spacing: -2.0px;
+	margin: 38px auto 98px;
+	line-height: 49px;
 }
 
-#header .header-btn {
-	display: block;
+#header button {
 	width: 170px;
 	height: 45px;
-	margin: 0 auto;
+	margin-top: -7px;
 	box-shadow: 0 17px 24px rgba(48, 63, 159, 0.2);
 	border-radius: 22px;
 	background-color: #303f9f;
 	text-transform: uppercase;
 	color: #fff;
 	font-weight: 400;
+	font-size: 15px;
+	letter-spacing: 2.0px;
 	text-decoration: none;
 }
 
