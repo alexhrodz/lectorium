@@ -147,12 +147,7 @@
 	background-color: #fff;
 }
 
-.wrapper-post__info {
-
-}
-
 .horizont-post {
-	
 	.post {
 		display: flex;
 	}
@@ -174,4 +169,70 @@
 		max-width: 400px;
 	}
 	
+}
+
+.arrow-more {
+	.row-flex();
+	justify-content: flex-end;
+	padding: 20px 0;
+}
+
+.aside {
+	background-color: #fff;
+	padding: 30px;
+
+	p {
+		text-align: center;
+	}
+
+	&__categories {
+
+		&--line {
+			display: flex;
+			justify-content: space-between;
+		}
+		
+	}
+
+	&__subcribe {
+
+		&--buttom {
+			
+		}
+	}
+
+	&__social {
+		.row-flex();
+		justify-content: space-between;
+	}
+
+	&__widget {
+		&--menu {
+			display: flex;
+		}
+	}
+
+	&__post {
+		display: flex;
+		&--wrapper{
+			flex-grow: 1;
+		}
+
+		&--info {
+			.row-flex();
+			justify-content: space-between;
+		}
+	}
+
+	&__tags {
+		&--elemets {
+			.row-flex();
+			max-width: 280px;
+			li {
+				padding: 5px 10px;
+				background-color: #ddd;
+				margin-right: 10px;
+			}
+		}
+	}
 }
