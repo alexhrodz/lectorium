@@ -135,6 +135,11 @@ img {
   color: #444;
 }
 
+.header__user-bar select {
+  background: inherit;
+  border: none;
+}
+
 .header__user-bar a {
   color: #444;
 }
@@ -158,8 +163,8 @@ img {
 .header__slider {
   text-align: center;
   min-height: 800px;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67)), url("../img/Layer_66.png") no-repeat center / cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67)), url("../img/Layer_66.png") no-repeat center / cover;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.77), rgba(0, 0, 0, 0.77)), url("../img/Layer_66.png") no-repeat center / cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.77), rgba(0, 0, 0, 0.77)), url("../img/Layer_66.png") no-repeat center / cover;
   position: relative;
   color: #fff;
 }
@@ -195,6 +200,12 @@ img {
   flex-wrap: wrap;
 }
 
+.sort {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
 .sort .wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -209,5 +220,19 @@ img {
   display: flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
+}
+
+.sort__menu--style {
+  color: #666;
+  border-radius: 20px;
+  padding: 5px 15px;
+  background-color: #999;
+}
+
+.sort__menu--style:hover,
+.sort__menu--style-aktive {
+  border: 1px solid blue;
+  background-color: #fff;
+  color: blue;
 }
 /*# sourceMappingURL=styles.css.map */
