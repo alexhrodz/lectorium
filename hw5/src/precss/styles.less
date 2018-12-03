@@ -88,13 +88,19 @@
 
 	&__menu {
 		.row-flex();
+		li {
+			margin-left: 10px;
+		}
 		&--style {
+
 			color: #666;
 			border-radius: 20px;
 			padding: 5px 15px;
 			background-color: #999;
 			&:hover, &-aktive {
-				border: 1px solid blue;
+				/*outline: 2px solid blue;
+				outline-offset: -2px;*/
+				border: 2px solid blue;
 				background-color: #fff;
 				color: blue;
 			}
@@ -102,3 +108,70 @@
 	}
 }
 
+.content {
+	background-color: #999;
+	.wrapper {
+		.row-flex();
+		justify-content: space-between;
+	}
+}
+* {
+		border: 1px solid blue;
+}
+
+.post-space {
+	max-width: 820px;
+}
+
+.post {
+	&__foto {
+
+	}
+
+	&__info {
+
+	}
+
+	.autor {
+		.row-flex();
+		justify-content: space-between;
+		&__info {
+			.row-flex();
+		
+		}
+		
+	}
+}
+
+.post {
+	background-color: #fff;
+}
+
+.wrapper-post__info {
+
+}
+
+.horizont-post {
+	
+	.post {
+		display: flex;
+	}
+}
+
+.horizont-post-3 {
+	.row-flex();
+	justify-content: space-between;
+	.post {
+		max-width: 260px;
+	}
+	
+}
+
+.horizont-post-2 {
+	.row-flex();
+	justify-content: space-between;
+	.post {
+		max-width: 400px;
+	}
+	
+}
