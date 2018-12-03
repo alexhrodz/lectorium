@@ -1,3 +1,7 @@
+/** {
+	border: 1px solid #555;
+}*/
+
 a,
 body,
 div,
@@ -115,6 +119,10 @@ img {
   margin: 0 auto;
 }
 
+.header__user-fon {
+  background-color: #000;
+}
+
 .header__user-bar {
   display: -webkit-box;
   display: -webkit-flex;
@@ -124,6 +132,11 @@ img {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
+  color: #444;
+}
+
+.header__user-bar a {
+  color: #444;
 }
 
 .header__user-bar--social {
@@ -140,6 +153,19 @@ img {
   display: flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
+}
+
+.header__slider {
+  text-align: center;
+  min-height: 800px;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67)), url("../img/Layer_66.png") no-repeat center / cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67)), url("../img/Layer_66.png") no-repeat center / cover;
+  position: relative;
+  color: #fff;
+}
+
+.header__slider a {
+  color: #fff;
 }
 
 .header__nav {
@@ -167,10 +193,6 @@ img {
   display: flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-}
-
-.header__slider {
-  text-align: center;
 }
 
 .sort .wrapper {

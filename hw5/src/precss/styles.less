@@ -1,5 +1,9 @@
 @import "start-css.less";
 
+/** {
+	border: 1px solid #555;
+}*/
+
 .reset();
 
 .wrapper{
@@ -8,15 +12,46 @@
 
 
 .header {
+	
+	&__user-fon {
+		background-color: #000;
+	}
+
 	&__user-bar {
 		.row-flex();
 		justify-content: space-between;
+		color: #444;
+		a {
+			color: #444;
+		}
 		&--social {
 			.row-flex();
 		}
 
 		&--user {
 			.row-flex();
+		}
+	}
+
+
+
+	&__slider {
+		text-align: center;
+		min-height: 800px;
+	 	background: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67)), url("../img/Layer_66.png") no-repeat center/cover;
+		position: relative;
+		color: #fff;
+		a {
+			color: #fff;
+		}
+		&--text {
+
+		}
+		&--title {
+
+		}
+		&--button {
+
 		}
 	}
 
@@ -35,19 +70,6 @@
 		}
 	}
 
-	&__slider {
-		text-align: center;
-		&--text {
-
-		}
-		&--title {
-
-		}
-		&--button {
-
-		}
-	}
-
 }
 
 .sort {
@@ -62,3 +84,4 @@
 		.row-flex();
 	}
 }
+
