@@ -391,7 +391,6 @@
           <a href="">More<img src="img/arrow_forward.png"></a>
         </div>
         </main>
-        
         <aside class="aside">
           <section class="aside__categories">
             <h5>categories</h5>
@@ -563,8 +562,7 @@
         </aside>
       </div>
     </section>
-
-    <footer id="">
+    <footer class="footer">
       <section class="gallery">
         <div>
           <img src="img/Layer_68.png" alt="">
@@ -591,19 +589,41 @@
           <img src="img/Layer_26.png" alt="">
         </div>
       </section>
-      <section class="newsletter">
-        <div class="wrap-newsletter">
-          <p>Subscribe to our newsletter</p>
-          <label>
-            <input type="email" name="email" placeholder="Email Adress">
-          </label>
-          <button>Subscribe</button>
+      <section class="footer__newsletter">
+        <div class="wrapper">
+          <span class="footer__newsletter--text">Subscribe to our newsletter</span>
+          <form class="footer__newsletter--form">
+            <label class="footer__newsletter--label">
+              <input class="footer__newsletter--input" type="email" name="email" placeholder="Email Adress">
+            </label>
+            <input class="footer__newsletter--butn" type="submit" value="Subscribe">
+          </form>
         </div>
       </section>
-      <section class="wrap-footer-nav">
-        <div class="group footer-nav">
+      <section class="footer__all">
+        <div class=wrapper>
+          <div>
+            <p>1</p>
+            <div>2</div>
+          </div>
+          <div>
+            <p>1</p>
+            <div>2</div>
+          </div>
+          <div>
+            <p>1</p>
+            <div>2</div>
+          </div>
+          <div>
+            <p>1</p>
+            <div>2</div>
+          </div>
+        </div>
+      </section>
+      <section class="footer__nav">
+        <div class=wrapper>
           <nav>
-            <ul>
+            <ul class="footer__nav--menu">
               <li><a href="#">home</a></li>
               <li><a href="#">portfolio</a></li>
               <li><a href="#">blog</a></li>
@@ -613,6 +633,10 @@
               <li><a href="#">features</a></li>
             </ul>
           </nav>
+          <form class="footer__nav--search">
+            <input type="text" placeholder="Искать здесь...">
+            <button type="submit"></button>
+          </form>
           <form class="wrap-lang">
             <i class="fas fa-globe"></i>
             <select name="lang">

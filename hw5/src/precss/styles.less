@@ -41,7 +41,8 @@
 	&__slider {
 		text-align: center;
 		min-height: 800px;
-	 	background: linear-gradient(rgba(0, 0, 0, 0.77), rgba(0, 0, 0, 0.77)), url("../img/Layer_66.png") no-repeat center/cover;
+	 	background: linear-gradient(rgba(0, 0, 0, 0.77), rgba(0, 0, 0, 0.77)),
+	 				url("../img/Layer_66.png") no-repeat center/cover;
 		position: relative;
 		color: #fff;
 		a {
@@ -115,15 +116,16 @@
 		justify-content: space-between;
 	}
 }
-* {
-		border: 1px solid blue;
-}
+
 
 .post-space {
 	max-width: 820px;
 }
 
 .post {
+	background-color: #fff;
+	margin-top: 15px;
+
 	&__foto {
 
 	}
@@ -143,10 +145,6 @@
 	}
 }
 
-.post {
-	background-color: #fff;
-}
-
 .horizont-post {
 	.post {
 		display: flex;
@@ -157,7 +155,7 @@
 	.row-flex();
 	justify-content: space-between;
 	.post {
-		max-width: 260px;
+		max-width: 258px;
 	}
 	
 }
@@ -179,7 +177,9 @@
 
 .aside {
 	background-color: #fff;
-	padding: 30px;
+	padding: 20px;
+	max-width: 300px;
+	margin-top: 15px;
 
 	p {
 		text-align: center;
@@ -236,3 +236,112 @@
 		}
 	}
 }
+
+.gallery {
+	.row-flex();
+	div {
+		width: 12.5%;
+	}
+}
+
+.footer {
+	&__newsletter {
+		background: url("../img/bg_footer.png") no-repeat center/cover;
+		.wrapper {
+			.row-flex();
+			justify-content: space-between;
+			padding: 60px 0;
+			margin-top: -4px;
+		}
+
+		&--text {
+			color: #fff;
+			size: 36px;
+		}
+
+		&--form {
+			
+		}
+
+		&--label {
+
+		}
+		&--input {
+			background: inherit;
+			border-radius: 20px;
+			padding: 5px 10px;
+			border: 1px solid blue;
+		}
+		&--butn {
+			background: inherit;
+			border: none;
+			border-radius: 20px;
+			background-color: blue;
+			padding: 5px 10px;
+			margin-left: 20px;
+		}
+
+	}
+
+	&__all {
+		.wrapper {
+			.row-flex();
+			justify-content: space-between;
+		}
+		background-color: #222;
+	}
+
+	&__nav {
+		.wrapper, &--menu{
+			.row-flex();
+			justify-content: space-between;
+		}
+		background-color: #333;
+		&--menu {
+			min-width: 600px;
+			flex-basis: 550px;
+		}
+
+		&--search {
+			&:after {
+				.clearfix()
+			}
+			form {
+				width: auto;
+				float: right;
+				margin-right: 30px;
+			}
+			input {
+				width: 250px;
+				height: 42px;
+				padding-left: 15px;
+				border-radius: 42px;
+				border: 2px solid #324b4e;
+				background: #F9F0DA;
+				outline: none;
+				position: relative;
+				transition: .3s linear;
+			}
+			input:focus {
+				width: 300px;
+			}
+			button {
+				width: 42px;
+				height: 42px;
+				background: none;
+				border: none;
+				position: absolute;
+				top: -2px;
+				right: 0;
+			}
+			button:before{
+				content: "\f002";
+				font-family: FontAwesome;
+				color: #324b4e;
+			}
+		}
+	}
+
+
+}
+
