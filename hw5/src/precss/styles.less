@@ -98,16 +98,18 @@
 			border-radius: 20px;
 			padding: 5px 15px;
 			background-color: #999;
+			border: 1px solid #999;
 			&:hover, &-aktive {
 				/*outline: 2px solid blue;
 				outline-offset: -2px;*/
-				border: 2px solid blue;
+				border: 1px solid blue;
 				background-color: #fff;
 				color: blue;
 			}
 		}
 	}
 }
+
 
 .content {
 	background-color: #999;
@@ -287,50 +289,6 @@
 
 	}
 
-	.footer-all {
-		background-color: #222;
-		.wrapper {
-			.row-flex();
-			justify-content: space-between;
-			div {
-				max-width: 275px;
-				flex-grow: 1;
-			}
-		}
-
-		&__pages {
-			.zaglushka {
-				display: none;
-			}
-		}
-		
-		&__news-letter {
-			&--form {
-				input, textarea {
-					background: inherit;
-					border-radius: 2px;
-					border: 1px solid #aaa;
-					width: 100%;
-				}
-				li:last-child {
-					text-align: center;
-					background-color: #333;
-					input {
-						border: none;
-						padding: 5px 0;
-					}
-				}
-			}
-		}
-		&__flickr {
-			.row-flex();
-			img {
-				width: 86px;
-			}
-		}
-		
-	}
-
 	&__nav {
 		padding: 20px 0;
 		.wrapper, &--menu{
@@ -383,7 +341,102 @@
 			}
 		}
 	}
-
-
 }
 
+.widget {
+	background-color: #222;
+
+	.wrapper {
+		.row-flex();
+		justify-content: space-between;
+		div {
+			max-width: 275px;
+			flex-grow: 1;
+		}
+	}
+
+	&__pages {
+		.zaglushka {
+			display: none;
+		}
+	}
+
+	&__twitter {
+		font-size: 13px;
+		&--title {
+
+		}
+
+		&--wraper {
+			.row-flex();
+		}
+	}
+	
+	&__news-letter {
+		&--form {
+			input, textarea {
+				background: inherit;
+				border-radius: 2px;
+				border: 1px solid #aaa;
+				width: 100%;
+			}
+			li:last-child {
+				text-align: center;
+				background-color: #333;
+				input {
+					border: none;
+					padding: 5px 0;
+				}
+			}
+		}
+	}
+	&__flickr {
+		.row-flex();
+		img {
+			width: 86px;
+		}
+	}
+	
+}
+.search {
+    max-width: 100%; /* Ширина поля с кнопкой */
+    border: 1px solid #000; /* Параметры рамки */
+    min-height: 20px; /* Минимальная высота */
+	border-radius: 50px;
+	padding: 2px;
+	.row-flex();
+	justify-content: space-between;
+	input[type="search"] {
+		padding: 5px 10px;
+		margin-left: 7px;
+		max-width: 230px;
+		border: none; /* Убираем рамку */
+		outline: none; /* Убираем свечение в Chrome и Safari */
+		-webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
+		vertical-align: middle; /* Выравнивание по середине */
+	}
+	input[type="submit"] {
+		color: #999;
+
+		width: 35px; /* Ширина кнопки */
+		height: 35px; /* Высота кнопки */
+		border: none; /* Убираем рамку */
+		border-radius: 50px;
+		background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)), url("https://img.icons8.com/ios/50/000000/search.png") no-repeat 50% 50%; /* Параметры фона */
+	}
+  
+}
+
+.shadow{
+	 display: inline-block;
+	 margin: 20px 0;
+}
+
+.text{
+color:#000;
+
+ background: linear-gradient(45deg, #000 1%, #666 33%, #aaa 66%, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}

@@ -392,6 +392,10 @@
         </div>
         </main>
         <aside class="aside">
+          <form class="search">
+            <input type="search" name="q" placeholder="Search">
+            <input type="submit" value="">
+          </form>
           <section class="aside__categories">
             <h5>categories</h5>
             <ul>
@@ -600,9 +604,9 @@
           </form>
         </div>
       </section>
-      <section class="footer-all">
+      <section class="widget">
         <div class=wrapper>
-          <div class="footer-all__pages">
+          <div class="widget__pages">
             <p>pages widget</p>
             <ul>
               <li>
@@ -659,54 +663,72 @@
               </li>
             </ul>
           </div>
-          <div>
-            <p>twitter widget</p>
+          <div class="widget__twitter">
+            <p class="widget__twitter--title">twitter widget</p>
             <div>
               <ul>
                 <li>
-                  <div>
-                    <i class="fab fa-facebook-f"></i>
-                    <a href="#">@pasco,</a>
-                    <span>Duis commodo elit sed nisi milestie</span>
-                  </div>
-                  <data>2 hours ago</data>
                   <i class="fab fa-facebook-f"></i>
-                  <ul>
-                    <li>Reply</li>
-                    <li>Retweet</li>
-                    <li>Favorite</li>
-                  </ul>
+                  <a href="#">@pasco,</a>
+                  <span>Duis commodo elit sed nisi milestie</span>
+                  <div class="widget__twitter--wraper">
+                    <a href="#">2 hours ago</a>
+                    <i class="fab fa-facebook-f"></i>
+                    <ul class="widget__twitter--wraper">
+                      <li>
+                        <a href="#">Reply</a>
+                      </li>
+                      <li>
+                        <a href="#">Retweet</a>
+                      </li>
+                      <li>
+                        <a href="#">Favorite</a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
                 <li>
-                  <div>
-                    <i class="fab fa-facebook-f"></i>
-                    <a href="#">@pasco,</a>
-                    <span>Duis commodo elit sed nisi milestie</span>
-                  </div>
-                  <data>2 hours ago</data>
                   <i class="fab fa-facebook-f"></i>
-                  <ul>
-                    <li>Reply</li>
-                    <li>Retweet</li>
-                    <li>Favorite</li>
-                  </ul>
+                  <a href="#">@pasco,</a>
+                  <span>Duis commodo elit sed nisi milestie</span>
+                  <div class="widget__twitter--wraper">
+                    <a href="#">2 hours ago</a>
+                    <i class="fab fa-facebook-f"></i>
+                    <ul class="widget__twitter--wraper">
+                      <li>
+                        <a href="#">Reply</a>
+                      </li>
+                      <li>
+                        <a href="#">Retweet</a>
+                      </li>
+                      <li>
+                        <a href="#">Favorite</a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
                 <li>
-                  <div>
-                    <i class="fab fa-facebook-f"></i>
-                    <a href="#">@pasco,</a>
-                    <span>Duis commodo elit sed nisi milestie</span>
-                  </div>
-                  <data>2 hours ago</data>
                   <i class="fab fa-facebook-f"></i>
-                  <ul>
-                    <li>Reply</li>
-                    <li>Retweet</li>
-                    <li>Favorite</li>
-                  </ul>
+                  <a href="#">@pasco,</a>
+                  <span>Duis commodo elit sed nisi milestie</span>
+                  <div class="widget__twitter--wraper">
+                    <a href="#">2 hours ago</a>
+                    <i class="fab fa-facebook-f"></i>
+                    <ul class="widget__twitter--wraper">
+                      <li>
+                        <a href="#">Reply</a>
+                      </li>
+                      <li>
+                        <a href="#">Retweet</a>
+                      </li>
+                      <li>
+                        <a href="#">Favorite</a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
               </ul>
-              <div>
+              <div class="widget__social">
                 <p>social widget</p>
                 <ul class="aside__social">
                   <li>
@@ -743,24 +765,42 @@
               </div>
             </div>
           </div>
-          <div class="footer-all__flickr">
+          <div class="widget__flickr">
             <p>flickr widget</p>
             <div>
-              <img src="img/Photo-2.png">
-              <img src="img/Photo-2.png">
-              <img src="img/Photo-2.png">
-              <img src="img/Photo-2.png">
-              <img src="img/Photo-2.png">
-              <img src="img/Photo-2.png">
-              <img src="img/Photo-2.png">
-              <img src="img/Photo-2.png">
-              <img src="img/Photo-2.png">
+              <a href="">
+                <img src="img/Photo-2.png">
+              </a>
+              <a href="">
+                <img src="img/Photo-2.png">
+              </a>
+              <a href="">
+                <img src="img/Photo-2.png">
+              </a>
+              <a href="">
+                <img src="img/Photo-2.png">
+              </a>
+              <a href="">
+                <img src="img/Photo-2.png">
+              </a>
+              <a href="">
+                <img src="img/Photo-2.png">
+              </a>
+              <a href="">
+                <img src="img/Photo-2.png">
+              </a>
+              <a href="">
+                <img src="img/Photo-2.png">
+              </a>
+              <a href="">
+                <img src="img/Photo-2.png">
+              </a>
             </div>
           </div>
-          <div class="footer-all__news-letter">
+          <div class="widget__news-letter">
             <p>news letter</p>
             <form>
-              <ul class="footer-all__news-letter--form">
+              <ul class="widget__news-letter--form">
                 <li>
                   <label>
                     <input type="text" name="name" placeholder="name">
@@ -775,7 +815,7 @@
                   <textarea name="message" cols="" rows="5">message</textarea>
                 </li>
                 <li>
-                  <input class="footer-all__news-letter--butn" type="submit" value="Subscribe">
+                  <input class="widget__news-letter--butn" type="submit" value="Subscribe">
                 </li>
               </ul>
             </form>
@@ -810,5 +850,10 @@
         </div>
       </section>
     </footer>
+    <div class="shadow">
+      <div class="text">
+        деруны з мясом
+      </div>
+    </div>
   </body>
 </html>
