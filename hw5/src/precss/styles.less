@@ -20,6 +20,7 @@
 		.row-flex();
 		justify-content: space-between;
 		color: #444;
+		padding: 10px 0;
 		select {
 			background: inherit;
 			border: none;
@@ -29,6 +30,9 @@
 		}
 		&--social {
 			.row-flex();
+			li {
+				margin-right: 10px;
+			}
 		}
 
 		&--user {
@@ -62,19 +66,33 @@
 	&__nav {
 		.row-flex();
 		justify-content: space-between;
+		padding-top: 30px;
 		&--logo {
-
+			font-size: 30px;
 		}
 		&--menu {
 			.row-flex();
+			li {
+				margin-right: 20px;
+			}
 		}
 
 		&--user {
 			.row-flex();
+			li {
+				border-right: 1px solid #777;
+				padding: 5px 15px;
+				&:last-child {
+					border-right: none;
+				}
+			}
+
 		}
 	}
 
 }
+
+
 
 .sort {
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
