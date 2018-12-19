@@ -127,7 +127,7 @@ img{
     line-height: 22px;
     text-transform: uppercase;
     letter-spacing: 1.2px;
-    margin-bottom: 90px;
+    margin-bottom: 93px;
 }
 
 .search {
@@ -135,38 +135,43 @@ img{
     background-color: #fff;
     margin: 0 auto;
     border-radius: 5px;
-    margin-bottom: 250px;
+    margin-bottom: 271px;
     position: relative;
     color: #717171;
-    font-family: Raleway;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
+    font: 400 14px/22px Raleway, sans-serif;
     text-transform: uppercase;
-    letter-spacing: 0.56px;
 }
 
 .search input {
+    width: 100%;
+    text-transform: uppercase;
+    height: 58px;
+    padding: 0 200px 0 30px;
+    border-radius: 5px;
     border: none;
     outline: none;
-    vertical-align: middle;
-    background: inherit;
-    text-transform: uppercase;
-    text-align: left;
+    letter-spacing: 0.4px;
 }
 
 .search button {
-  color: #fff;
-  border: none;
-  font-weight: 700;
-  background-color: #e7434e;
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 24px 44px;
-  letter-spacing: -1.84px;
+    color: #fff;
+    letter-spacing: 0.56px;
+    position: absolute;
+    width: 200px;
+    height: 58px;
+    border-radius: 0 5px 5px 0;
+    background-color: #e7434e;
+    top: 0;
+    right: 0;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-weight: 400;
 }
 
+.search .fa-ship {
+    margin-right: 7px;
+}
 
 
 
