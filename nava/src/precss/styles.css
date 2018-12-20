@@ -164,13 +164,10 @@ img{
 .search .fa-ship {
     margin-right: 7px;
 }
-
-
-
 /*header css end*/
 
 
-/*header ifo us*/
+/*ifo us*/
 .info-us {
     max-width: 1200px;
     display: flex;
@@ -180,6 +177,7 @@ img{
     box-shadow: 0 0 30px rgba(52, 52, 52, 0.15);
     padding: 30px 0px;
     border-radius: 5px;
+    margin-bottom: 106px;
 }
 
 .info-us  li {
@@ -213,7 +211,10 @@ img{
     letter-spacing: -0.3px;
     color: #717171;
 }
-/*header ifo us end*/
+/*ifo us end*/
+
+/*destinations*/
+
 
 .container {
     max-width: 1170px;
@@ -221,21 +222,65 @@ img{
     text-align: center;
 }
 
+.destinations {
+    margin-bottom: 98px;
+}
+
 .container__wrapp {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 88px;
 }
 
+.destinations__title {
+    color: #343435;
+    font: 400 30px/28px Raleway, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.18px;
+    margin-left: 9px;
+    margin-bottom: 22px;
+}
 
+.destinations__text {
+    color: #717171;
+    font: 400 16px/22px "Open Sans", sans-serif;
+    letter-spacing: 0.18px;
+    margin-bottom: 83px;
+}
+
+.destinations__post {
+    margin-bottom: 27px;
+}
+
+.destinations__more {
+    color: #343434;
+    font: 700 14px/22px Raleway, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.56px;
+    padding: 21px 42px 19px;
+    border-radius: 5px;
+    border: 1px solid rgba(38, 38, 38, 0.3);
+}
+/*destinations end*/
+
+/*baner*/
 .baner {
     text-align: center;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/bg-baner.jpg") no-repeat center / cover;
 
 }
 
+.baner__title {
+    margin: 0 0 0 0;
+}
 
+.baner__text {
+    margin-bottom: 0;
+}
+/*baner end*/
 
+/*footer*/
 .footer {
     color: #fff;
     background-color: #404040;
@@ -273,3 +318,4 @@ img{
 .social {
     display: flex;
 }
+/*footer end*/
