@@ -69,10 +69,7 @@ img{
 .header__nav {
     display: flex;
     align-self: center;
-    font-family: Raleway;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 22px;
+    font: 700 16px/22px Raleway, sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.64px;
     margin-top: -2px;
@@ -95,7 +92,6 @@ img{
 }
 
 .header__baner {
- 
     text-align: center;
 }
 
@@ -148,6 +144,7 @@ img{
     height: 58px;
     border-radius: 0 5px 5px 0;
     background-color: #e7434e;
+    text-transform: uppercase;
     top: 0;
     right: 0;
     border: none;
@@ -165,17 +162,16 @@ img{
 .info-us {
     max-width: 1200px;
     display: flex;
-    margin: -70px auto 0;
+    margin: 0 auto 35px;
     color: #000;
     background-color: #fff;
     box-shadow: 0 0 30px rgba(52, 52, 52, 0.15);
     padding: 30px 0px;
     border-radius: 5px;
-    margin-bottom: 106px;
+    transform: translateY(-50%);
 }
 
 .info-us  li {
-    
     text-align: center;
     border-right: 1px solid #717171;
     width: 300px;
@@ -187,15 +183,11 @@ img{
 }
 
 .info-us span {
-    color: #262626;
-    font-family: "Open Sans";
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 22px;
+    color: #343434;
+    font: 700 30px/22px "Open Sans", sans-serif;
     text-transform: uppercase;
     letter-spacing: 1.2px;
     margin-bottom: 20px;
-    color: #343434;
 }
 
 .info-us p {
@@ -247,8 +239,14 @@ img{
 
 .destinations__post,
 .featured__post {
-    margin-bottom: 27px;
+    margin-bottom: 31px;
     position: relative;
+    
+}
+
+.destinations__post img,
+.featured__post img {
+    vertical-align: middle;
 }
 
 .destinations__more,
@@ -313,7 +311,7 @@ img{
 }
 
 .featured .container__wrapp {
-    margin-bottom: 115px;
+    margin-bottom: 89px;
 }
 
 /*featured end*/
@@ -325,7 +323,6 @@ img{
     background-color: #404040;
     border: 6px solid red;
     border-image: url("../img/Slice_1.jpg") 5 round;
-
     border-bottom: none;
     border-left: none;
     border-right: none;
@@ -369,9 +366,8 @@ img{
 }
 
 .footer .search {
-
     border-radius: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 33px;
     position: relative;
     color: #717171;
     font: 400 14px/22px Raleway, sans-serif;
@@ -385,12 +381,9 @@ img{
 }
 
 .footer .search button {
-
     letter-spacing: 0.28px;
-
     width: 148px;
     height: 43px;
-
 }
 
 .block-2 {
@@ -415,7 +408,6 @@ img{
     color: #fff;
     border-radius: 5px;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 40%);
-  
 }
 
 .post__attribute--top,
@@ -441,3 +433,35 @@ img{
     bottom: 30px;
     left: 30px;
 }
+
+.social {
+    margin-left: -2px;
+}
+
+.social li {
+    margin-right: 19px;
+
+}
+
+
+
+.social__element {
+    width: 45px;
+    height: 33px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #777;
+    color: #f5f5f5;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 11px;
+}
+
+.social__element:hover {
+    color: #fff;
+    font-size: 24px;
+    padding-top: 7px;
+    height: 37px;
+    background-color: #959595;
+}
+
