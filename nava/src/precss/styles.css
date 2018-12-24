@@ -66,6 +66,10 @@ img{
     margin: 0 auto;
 }
 
+.header__top h1 a img:hover {
+    transform: scale(1.2, 1.2);
+}
+
 .header__nav {
     display: flex;
     align-self: center;
@@ -159,6 +163,12 @@ img{
     font-weight: 400;
 }
 
+.search button:hover,
+.newsletter-form button:hover {
+    color: #e7434e;
+    background-color: #888;
+}
+
 .search .fa-ship {
     margin-right: 7px;
 }
@@ -246,9 +256,7 @@ img{
 
 .destinations__post,
 .featured__post {
-    margin-bottom: 31px;
     position: relative;
-    
 }
 
 .destinations__post img,
@@ -265,6 +273,12 @@ img{
     padding: 21px 42px 19px;
     border-radius: 5px;
     border: 1px solid rgba(38, 38, 38, 0.3);
+}
+
+.destinations__more:hover,
+.featured__button:hover {
+    color: #fff;
+    background-color: #e7434e;    
 }
 /*destinations end*/
 
@@ -296,6 +310,11 @@ img{
     border: none;
     cursor: pointer;
     padding: 21px 45px 19px;
+}
+
+.baner__button:hover {
+    color: #000;
+    background-color: #fff; 
 }
 /*baner end*/
 
@@ -329,7 +348,7 @@ img{
     color: #fff;
     background-color: #404040;
     border: 6px solid red;
-    border-image: url("../img/Slice_1.jpg") 5 round;
+    border-image: url("../img/Slice_2.png") 4.2 round;
     border-bottom: none;
     border-left: none;
     border-right: none;
@@ -347,7 +366,6 @@ img{
     max-width: 159px;
 }
 
-
 .footer__block--title {
     font: 700 14px/22px Raleway, sans-serif;
     text-transform: uppercase;
@@ -363,10 +381,6 @@ img{
 .footer__block-text {
     font: 400 14px/34px "Open Sans", sans-serif;
     letter-spacing: 0.56px;
-}
-
-.social {
-    display: flex;
 }
 
 .newsletter {
@@ -402,6 +416,7 @@ img{
 }
 
 .social {
+    display: flex;
     margin-left: -2px;
 }
 
@@ -431,6 +446,8 @@ img{
 
 /*footer end*/
 
+
+/*post*/
 .post__attribute {
     position: absolute;
     left: 0;
@@ -493,3 +510,12 @@ img{
     letter-spacing: 1.4px;
     font: 400 16px/22px "Open Sans", sans-serif;
 }
+
+.container__wrapp a {
+    margin-bottom: 31px;
+}
+
+.container__wrapp a:hover {
+    box-shadow: 0 0 30px rgba(52, 52, 52, 0.75);
+}
+/*post end*/
