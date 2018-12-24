@@ -12,21 +12,29 @@
     <header class="header">
       <div class="header__top">
         <h1>
-          <a href="#">
+          <a href="#" title="logo">
             <img src="img/logo.png" alt="logo">
           </a>
         </h1>
         <ul class="header__nav">
-          <li>top destinations</li>
-          <li>add your boat</li>
-          <li>sign up</li>
+          <li>
+            <a href="#" title="top destinations">top destinations</a>
+          </li>
+          <li>
+            <a href="#" title="add your boat">add your boat</a>
+          </li>
+          <li>
+            <a href="#" title="sign up">sign up</a>
+          </li>
         </ul>
       </div>
       <div class="header__baner">
         <h2 class="header__baner--title">reserve a boat now!</h2>
         <p class="header__baner--text">and set your sails into paradise!</p>
         <form class="search">
-          <input type="search" placeholder="what is your destination, sailor?">
+          <label for="search">
+            <input type="search" id="search" placeholder="what is your destination, sailor?">
+          </label>
           <button type="submit">
             <i class="fas fa-ship"></i>find a boat
           </button>
@@ -56,56 +64,71 @@
         <h3 class="destinations__title">explore our top destinations</h3>
         <p class="destinations__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
         <div class="container__wrapp">
-          <div class="destinations__post">
-            <img src="img/photo-1.jpg" alt="foto Figueira da Foz">
-            <div class="post__attribute">
-              <span class="post__attribute--top">
-                <i class="fas fa-ship">730</i>
-              </span>
-              <p class="post__attribute--city">Figueira da Foz</p>
-              <p class="post__attribute--country">Portugal</p>
+          <a href="#">
+            <div class="destinations__post">
+              <img src="img/photo-1.jpg" alt="foto Figueira da Foz">
+              <div class="post__attribute">
+                <span class="post__attribute--top">
+                  <i class="fas fa-ship"></i>
+                  <span>730</span>
+                </span>
+                <p class="post__attribute--city">Figueira da Foz</p>
+                <p class="post__attribute--country">Portugal</p>
+              </div>
             </div>
-          </div>
-          <div class="destinations__post">
-            <img src="img/photo-2.jpg" alt="foto Ibiza">
-            <div class="post__attribute">
-              <span class="post__attribute--top">
-                <i class="fas fa-ship">621</i>
-              </span>
-              <p class="post__attribute--city">Ibiza</p>
-              <p class="post__attribute--country">Spain</p>
+          </a>
+          <a href="#">
+            <div class="destinations__post">
+              <img src="img/photo-2.jpg" alt="foto Ibiza">
+              <div class="post__attribute">
+                <span class="post__attribute--top">
+                  <i class="fas fa-ship"></i>
+                  <span>621</span>
+                </span>
+                <p class="post__attribute--city">Ibiza</p>
+                <p class="post__attribute--country">Spain</p>
+              </div>
             </div>
-          </div>
-          <div class="destinations__post">
-            <img src="img/photo-3.jpg" alt="foto Palma de Mallorca">
-            <div class="post__attribute">
-              <span class="post__attribute--top">
-                <i class="fas fa-ship">543</i>
-              </span>
-              <p class="post__attribute--city">Palma de Mallorca</p>
-              <p class="post__attribute--country">Spain</p>
+          </a>
+          <a href="#">
+            <div class="destinations__post">
+              <img src="img/photo-3.jpg" alt="foto Palma de Mallorca">
+              <div class="post__attribute">
+                <span class="post__attribute--top">
+                  <i class="fas fa-ship"></i>
+                  <span>543</span>
+                </span>
+                <p class="post__attribute--city">Palma de Mallorca</p>
+                <p class="post__attribute--country">Spain</p>
+              </div>
             </div>
-          </div>
-          <div class="destinations__post">
-            <img src="img/photo-4.jpg" alt="foto Portofino">
-            <div class="post__attribute">
-              <span class="post__attribute--top">
-                <i class="fas fa-ship">495</i>
-              </span>
-              <p class="post__attribute--city">Portofino</p>
-              <p class="post__attribute--country">Italy</p>
+          </a>
+          <a href="#">
+            <div class="destinations__post">
+              <img src="img/photo-4.jpg" alt="foto Portofino">
+              <div class="post__attribute">
+                <span class="post__attribute--top">
+                  <i class="fas fa-ship"></i>
+                  <span>495</span>
+                </span>
+                <p class="post__attribute--city">Portofino</p>
+                <p class="post__attribute--country">Italy</p>
+              </div>
             </div>
-          </div>
-          <div class="destinations__post">
-            <img src="img/photo-5.jpg" alt="foto Port Hercules">
-            <div class="post__attribute">
-              <span class="post__attribute--top">
-                <i class="fas fa-ship">402</i>
-              </span>
-              <p class="post__attribute--city">Port Hercules</p>
-              <p class="post__attribute--country">Monaco</p>
+          </a>
+          <a href="#">
+            <div class="destinations__post">
+              <img src="img/photo-5.jpg" alt="foto Port Hercules">
+              <div class="post__attribute">
+                <span class="post__attribute--top">
+                  <i class="fas fa-ship"></i>
+                  <span>402</span>
+                </span>
+                <p class="post__attribute--city">Port Hercules</p>
+                <p class="post__attribute--country">Monaco</p>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
         <a class="destinations__more" href="#">explore more destinations</a>
       </div>
@@ -119,54 +142,62 @@
       <h3 class="featured__title">featured boats</h3>
       <p class="featured__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
       <div class="container__wrapp">
-        <div class="featured__post">
-          <img src="img/photo-2-1.jpg" alt="foto Delphia 47 boat">
-          <div class="post__attribute">
-            <span class="post__attribute--price">
-              <i class="fas fa-euro-sign">580 / day</i>
-            </span>
-            <p class="post__attribute--model">Delphia 47</p>
-            <p class="post__attribute--location">
-              <i class="fas fa-map-marker-alt"></i> Gdańsk, Poland <i class="fas fa-user-friends"></i> 8 Berths
-            </p>
+        <a href="#">
+          <div class="featured__post">
+            <img src="img/photo-2-1.jpg" alt="foto Delphia 47 boat">
+            <div class="post__attribute">
+              <span class="post__attribute--price">
+                <i class="fas fa-euro-sign">580 / day</i>
+              </span>
+              <p class="post__attribute--model">Delphia 47</p>
+              <p class="post__attribute--location">
+                <i class="fas fa-map-marker-alt"></i> Gdańsk, Poland <i class="fas fa-user-friends"></i> 8 Berths
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="featured__post">
-          <img src="img/photo-2-2.jpg" alt="foto Sense 55 boat">
-          <div class="post__attribute">
-            <span class="post__attribute--price">
-              <i class="fas fa-euro-sign">950 / day</i>
-            </span>
-            <p class="post__attribute--model">Sense 55</p>
-            <p class="post__attribute--location">
-              <i class="fas fa-map-marker-alt"></i> Portofino, Italy <i class="fas fa-user-friends"></i> 12 Berths
-            </p>
+        </a>
+        <a href="#">
+          <div class="featured__post">
+            <img src="img/photo-2-2.jpg" alt="foto Sense 55 boat">
+            <div class="post__attribute">
+              <span class="post__attribute--price">
+                <i class="fas fa-euro-sign">950 / day</i>
+              </span>
+              <p class="post__attribute--model">Sense 55</p>
+              <p class="post__attribute--location">
+                <i class="fas fa-map-marker-alt"></i> Portofino, Italy <i class="fas fa-user-friends"></i> 12 Berths
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="featured__post">
-          <img src="img/photo-2-3.jpg" alt="foto Crusier 51 boat">
-          <div class="post__attribute">
-            <span class="post__attribute--price">
-              <i class="fas fa-euro-sign">820 / day</i>
-            </span>
-            <p class="post__attribute--model">Crusier 51</p>
-            <p class="post__attribute--location">
-              <i class="fas fa-map-marker-alt"></i> Palma de Mallorca, Spain <i class="fas fa-user-friends"></i> 10 Berths
-            </p>
+        </a>
+        <a href="#">
+          <div class="featured__post">
+            <img src="img/photo-2-3.jpg" alt="foto Crusier 51 boat">
+            <div class="post__attribute">
+              <span class="post__attribute--price">
+                <i class="fas fa-euro-sign">820 / day</i>
+              </span>
+              <p class="post__attribute--model">Crusier 51</p>
+              <p class="post__attribute--location">
+                <i class="fas fa-map-marker-alt"></i> Palma de Mallorca, Spain <i class="fas fa-user-friends"></i> 10 Berths
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="featured__post">
-          <img src="img/photo-2-4.jpg" alt="foto Crusier 41S boat">
-          <div class="post__attribute">
-            <span class="post__attribute--price">
-              <i class="fas fa-euro-sign">400 / day</i>
-            </span>
-            <p class="post__attribute--model">Crusier 41S</p>
-            <p class="post__attribute--location">
-              <i class="fas fa-map-marker-alt"></i> Lisbon, Portugal <i class="fas fa-user-friends"></i> 8 Berths
-            </p>
+        </a>
+        <a href="#">
+          <div class="featured__post">
+            <img src="img/photo-2-4.jpg" alt="foto Crusier 41S boat">
+            <div class="post__attribute">
+              <span class="post__attribute--price">
+                <i class="fas fa-euro-sign">400 / day</i>
+              </span>
+              <p class="post__attribute--model">Crusier 41S</p>
+              <p class="post__attribute--location">
+                <i class="fas fa-map-marker-alt"></i> Lisbon, Portugal <i class="fas fa-user-friends"></i> 8 Berths
+              </p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
       <a class="featured__button" href="#">load more boats</a>
     </section>
@@ -182,8 +213,10 @@
         </div>
         <div  class="newsletter">
           <h5 class="footer__block--title">subscribe to our newsletter</h5>
-          <form class="search">
-            <input type="search" placeholder="Your email adress">
+          <form class="newsletter-form">
+            <label for="newsletter">
+              <input type="email" id="newsletter" placeholder="Your email adress">
+            </label>
             <button type="submit">subscribe</button>
           </form>
           <ul class="social">
