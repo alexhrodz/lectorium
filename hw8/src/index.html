@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#main-nav" id="home">
 		<nav class="navbar navbar-expand-sm bg-primary navbar-light fixed-top" id="main-nav">
 			<div class="container">
 			  <a href="index.html" class="navbar-brand">LoopLAB</a>
@@ -248,8 +248,85 @@
 
 
 
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	  <!--footer start-->
+	  <footer id="main-footer" class="bg-dark">
+	    <div class="container">
+	      <div class="row">
+	        <div class="col text-center py-4">
+	          <h3>LoopLAB</h3>
+	          <p>Copyright &copy;
+	            <span id="year"></span>
+	          </p>
+	          <button class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Contact Us</button>
+	        </div>
+	      </div>
+	    </div>
+	  </footer>
+	  <!--footer end-->
+
+	  <!--contact modal start-->
+	  <div class="modal fade text-dark" id="contactModal">
+	    <div class="modal-dialog">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <h5 class="modal-title">Contact Us</h5>
+	          <button class="close" data-dismiss="modal">
+	            <span>&times;</span>
+	          </button>
+	        </div>
+	        <div class="modal-body">
+	          <form>
+	            <div class="form-group">
+	              <label for="name">Name</label>
+	              <input type="text" class="form-control">
+	            </div>
+	            <div class="form-group">
+	              <label for="email">Email</label>
+	              <input type="email" class="form-control">
+	            </div>
+	            <div class="form-group">
+	              <label for="message">Message</label>
+	              <textarea class="form-control"></textarea>
+	            </div>
+	          </form>
+	        </div>
+	        <div class="modal-footer">
+	          <button class="btn btn-primary btn-block">Submit</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	  <!--contact modal end-->
+
+
+	  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+		<script>
+	    // Get the current year for the copyright
+	    $('#year').text(new Date().getFullYear());
+
+	    // Init Scrollspy
+	    $('body').scrollspy({ target: '#main-nav' });
+
+	    // Smooth Scrolling
+	    $("#main-nav a").on('click', function (event) {
+	      if (this.hash !== "") {
+	        event.preventDefault();
+
+	        const hash = this.hash;
+
+	        $('html, body').animate({
+	          scrollTop: $(hash).offset().top
+	        }, 800, function () {
+	          window.location.hash = hash;
+	        });
+	      }
+	    });
+	  </script>
   </body>
 </html>
