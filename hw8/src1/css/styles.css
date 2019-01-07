@@ -65,3 +65,17 @@ body {
 #video-play a {
   color: #fff;
 }
+
+#page-header {
+  height: 200px;
+  background: url('https://source.unsplash.com/random/1920x1200');
+  background-position: 0 -360px;
+  background-attachment: fixed;
+  color: #fff;
+  border-bottom: 1px #eee solid;
+  padding-top: 50px;
+}
+
+.about-img {
+  margin-top: -50px;
+}
