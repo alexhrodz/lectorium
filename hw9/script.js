@@ -38,9 +38,18 @@ while (j <= 15) {
 
 let b, c;
 
-var calc = function(b, c) {
-  console.log("Addition " + (b + c));
-  console.log("Subtraction " + (b - c));
-  console.log("Multiplication " + b * c);
-  console.log("Division " + b / c);
-};
+function plus (b, c) {
+  return b + c;
+}
+
+function minus (b, c) {
+  return b - c;
+}
+
+function mylti (b, c) {
+  return b * c;
+}
+
+function dev (b, c) {
+  return b / c;
+}
