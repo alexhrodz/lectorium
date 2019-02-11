@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>JQ</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+  <div class="b-container">
+    <a href="javascript:PopUpShow()">Show popup</a>
+  </div>
+  <div class="b-popup" id="popup1">
+    <div class="b-popup-content">
+      <h2>PopUp</h2>
+      <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+      <a href="javascript:PopUpHide()">Close</a>
+    </div>
+  </div>
+	<script>
+    $(document).ready(function(){
+      PopUpHide();
+    });
+    function PopUpShow(){
+      $("#popup1").show();
+    }
+    function PopUpHide(){
+      $("#popup1").hide();
+    }
+	</script>
+  </body>
+</html>
